@@ -7,7 +7,7 @@ yum -y update && yum -y install epel-release && yum install -y tar wget gcc gcc-
 cd /usr/local/src/php-files && ls | xargs -n1 tar xzvf
 
 
-cd /usr/local/src/php-files/php-5.6.36 && ./configure  --prefix=/usr/local/php --enable-fpm --enable-pcntl --with-mysql=mysqlnd --with-mcrypt --enable-bcmath --with-curl --with-gd --enable-gd-native-ttf --with-freetype-dir --enable-intl --with-mysql-sock=/tmp/mysqld.sock --enable-mysqlnd --with-mysqli=mysqlnd --with-pdo-mysql=mysqlnd --with-libxml-dir=/usr/lib64 --with-mhash --enable-sockets --with-png-dir=/usr/lib64 --with-jpeg-dir=/usr/lib64 --with-zlib --enable-opcache --enable-zip --enable-mbstring --with-openssl --with-pcre-regex && make && make install 
+cd /usr/local/src/php-files/php-5.6.40 && ./configure  --prefix=/usr/local/php --enable-fpm --enable-pcntl --with-mysql=mysqlnd --with-mcrypt --enable-bcmath --with-curl --with-gd --enable-gd-native-ttf --with-freetype-dir --enable-intl --with-mysql-sock=/tmp/mysqld.sock --enable-mysqlnd --with-mysqli=mysqlnd --with-pdo-mysql=mysqlnd --with-libxml-dir=/usr/lib64 --with-mhash --enable-sockets --with-png-dir=/usr/lib64 --with-jpeg-dir=/usr/lib64 --with-zlib --enable-opcache --enable-zip --enable-mbstring --with-openssl --with-pcre-regex && make && make install 
 
 # CONFIG PHP5.6  
 ln -s /usr/local/php/bin/php /usr/local/bin/php  && ln -s /usr/local/php/sbin/php-fpm /usr/local/bin/php-fpm  && ln -s /usr/local/php/bin/php-config /usr/bin/php-config
